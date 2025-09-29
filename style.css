@@ -304,6 +304,7 @@ social, .social-icons{
     }
     .mid1-section, .mid2-section{
         width: 90%;
+        align-items: center;
     }
     .top-section{
     width: 100%;
