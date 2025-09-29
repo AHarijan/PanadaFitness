@@ -85,6 +85,7 @@ footer{
 }               
 img{
     height: 30px;
+    margin-left: 1vh;
 }
 .social{
     display: flex;
