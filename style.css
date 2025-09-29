@@ -248,7 +248,7 @@ social, .social-icons{
     align-items: center;
     color: white;
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 .mid1-section p{
@@ -258,6 +258,7 @@ social, .social-icons{
     align-items: center;
     color: white;
     text-align: center;
+    font-size: 1rem;
 }
 .mid2-section{
     display: flex;
