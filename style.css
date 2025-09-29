@@ -124,7 +124,7 @@ social, .social-icons{
 #check{
     display: none;
 }
-@media (max-width: 576px) {
+@media (max-width: 426px) {
     .contact_me{
         display: none;
     }
@@ -158,7 +158,7 @@ social, .social-icons{
         left: 0;
     }
     .logo{
-        margin-right: -10vw;
+        margin-right: -5vw;
     }
     .footer-links{
     width: 100%;
@@ -168,6 +168,9 @@ social, .social-icons{
     }
     social, .social-icons{
     width: 50%;
+    }
+    header{
+        width: 100%;
     }
 }
 /* /////////////////Home Page///////////////// */
@@ -213,6 +216,9 @@ social, .social-icons{
                 opacity: 1;
             }
         }
+
+
+
 .top-section p{
     color: white;
     font-size: 100px;
@@ -292,13 +298,20 @@ social, .social-icons{
         padding-top: 30vh;
     }
     .top-section p{
-        font-size: 70px;
+        font-size: 60px;
         width: 90%;
     }
     .mid1-section, .mid2-section{
         width: 90%;
     }
+    .top-section{
+    width: 100%;
+    }
+    header{
+        width: 100%;
+    }
 }
+
 /* /////////////////about Page///////////////// */
 .about-section1{
     display: flex;
@@ -581,6 +594,7 @@ h2{
         align-items: center;
         height: auto;
         flex-direction: column;
+        width: auto;
     }
     .mid4-box1, .mid4-box2, .mid4-box3, .mid4-box4, .mid4-box5{
         border: 1px solid white;
