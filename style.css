@@ -78,7 +78,7 @@ footer{
 .footer-links{
     font-size: 1rem;
     font-weight: lighter;
-    width: 100%;
+    width: 50%;
 }   
 .footer-links a{
     font-weight: lighter;
@@ -442,9 +442,9 @@ h2{
 }
 .about-section3{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     background-color: rgb(41, 41, 41);
 }
@@ -464,12 +464,13 @@ h2{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    margin: 0%;
 }
 .about-section3-h1{
     font-weight: lighter;
     text-align: center;
     color: white;
-    margin: 2vh;
+    margin: 1vh;
 }
 .about-section3-p{
     font-weight: lighter;
@@ -524,7 +525,26 @@ h2{
         margin-bottom: 2vh;
     }
 }
+@media (max-width: 768px) {
+    .about-innerbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
 
+    .about-inerbox-card1, .about-inerbox-card2, .about-inerbox-card3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 45%
+    }
+    .about-section3-p2 {
+    height: 60vh;
+    font-size: 12px;
+}
+}
 /* /////////////////Courses Page///////////////// */
 
 
