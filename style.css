@@ -83,9 +83,15 @@ footer{
 .footer-links a{
     font-weight: lighter;
 }               
-img{
+.social_icon{
     height: 30px;
     margin-left: 3vh;
+}
+.love{
+    height: 30px;
+}
+.header_img{
+    height: 30px;
 }
 .social{
     display: flex;
@@ -163,6 +169,16 @@ social, .social-icons{
     .logo{
         margin-right: -5vw;
     }
+    .social_icon{
+        height: 30px;
+        margin-left: 3vh;
+    }
+    .love{
+        height: 30px;
+    }
+    .header_img{
+        height: 30px;
+    }
     .footer-links{
     width: 100%;
     } 
@@ -180,7 +196,6 @@ social, .social-icons{
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    padding: 15px;
   }
   .logo {
     margin-top: 1px;
@@ -198,6 +213,16 @@ social, .social-icons{
   .contact_me{
     display: none;
   }
+  .social_icon{
+        height: 30px;
+        margin-left: 3vh;
+    }
+    .love{
+        height: 30px;
+    }
+    .header_img{
+        height: 30px;
+    }
   .footer-links{
     font-weight: lighter;
     width: 100%;
