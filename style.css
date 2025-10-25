@@ -408,9 +408,10 @@ h2{
     width: 98%;
     padding: 2vh;
     overflow: visible;
+    overflow-y: auto;
 }
 .mid4-box1{
-    min-width: 16%;
+    width: 30rem;
     margin-left: 1vw;
     margin-right: 1vw;
     border-radius: 5px;
@@ -418,7 +419,8 @@ h2{
     overflow: visible;
 }
 .mid4-boxT{
-    height: 65%;
+    height: 30rem;
+    width: 20rem;
 }
 .mid4-boxT-img{
     height: 100%;
@@ -434,6 +436,9 @@ h2{
     min-height: 35%;
     text-align: center;
 }
+.mid4-boxB h1 {
+    height: 3rem;
+}
 .mid4-boxB h1 a{
     text-align: center;
     text-decoration: none;
@@ -445,6 +450,7 @@ h2{
     text-align: center;
     height: auto;
     overflow: visible;
+    margin-top: 2rem;
 }
 .mid5-section{
     display: flex;
@@ -562,12 +568,26 @@ h2{
         overflow: visible;
     }
     .mid4-box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
         overflow: visible;
         width: 90%;
+        margin-bottom: 5rem;
     }
     .mid4-boxT-img{
         height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .mid4-boxT{
+        height: 30rem;
+        width: 50rem;
+    }
+    .mid4-boxT-img{
+        height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: 5px;
@@ -682,6 +702,9 @@ h2{
         overflow: visible;
     }
     .mid4-box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
         overflow: visible;
         width: 90%;
@@ -695,6 +718,17 @@ h2{
     .mid5-section{
         height: auto;
         overflow: visible;
+    }
+    .mid4-boxT{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mid4-boxT-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
     }
 
 }
