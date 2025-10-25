@@ -1,19 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* Desktop View */
 body {
     font-family: Michroma;
     background-color: #000000;
     color: #8b8b8b;
-    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(41, 41, 41);
-    height: 8vh;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    margin-left: 0rem;
     color: white;
     position: fixed;
     width: 100%;
@@ -21,7 +23,7 @@ header{
     z-index: 1000;
 }
 ul{
-    width: 50%;
+    width: 80%;
     display: flex; 
     justify-content: space-around;
 }
@@ -38,14 +40,14 @@ li a{
 li a:hover{
     color: rgba(240, 93, 35, 0.856);
     font-weight: bolder;
-    
 }
 .logo{
-    margin-top: 5px;
-    font-size: 35px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 .logo-sub{
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-top: -10px;
     color: rgba(240, 93, 35, 0.856);
 }
@@ -58,6 +60,23 @@ li a:hover{
     justify-content: center;
     align-items: center;
     border: 2px solid white;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.main-container{
+    margin-top: 5rem;
+    width: 100%;
+    min-height: 90vh;
 }
 footer{
     display: flex;
@@ -72,33 +91,33 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1rem;
     width: 100%;
 }
 .footer-links{
     font-size: 1rem;
     font-weight: lighter;
     width: 50%;
-}   
+} 
 .footer-links a{
     font-weight: lighter;
-}               
+}
 .social_icon{
-    height: 30px;
+    height: 2rem;
     margin-left: 3vh;
 }
 .love{
-    height: 30px;
+    height: 2rem;
 }
 .header_img{
-    height: 30px;
+    height: 2rem;
 }
 .social{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid rgb(255, 255, 255);
 }
 social, .social-icons{
     display: flex;
@@ -114,129 +133,18 @@ social, .social-icons{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
 }
 .copyright2   {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-@media (max-width: 480px) {
-    .contact_me{
-        display: none;
-    }
-    .checkbtn{
-        display: block;
-        margin-left: -10vw;
-    }
-    .nav-links{
-         position: fixed;
-         flex-direction: column;
-         width: 100%;
-         height: 50vh;
-         background: #2c3e50e0;
-         top: 40px;
-         left: -100%;
-         text-align: center;
-         transition: all .5s;
-    }
-    header ul li{
-        display: block;
-        
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .logo{
-        margin-right: -5vw;
-    }
-    .social_icon{
-        height: 30px;
-        margin-left: 3vh;
-    }
-    .love{
-        height: 30px;
-    }
-    .header_img{
-        height: 30px;
-    }
-    .footer-links{
-    width: 100%;
-    } 
-    .footer-links li a{
-    font-size: 10px;
-    }
-    social, .social-icons{
-    width: 100%;
-    justify-content: center;
-    }
-    header{
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-  .logo {
-    margin-top: 1px;
-    font-size: 25px;
-  }
-  .nav-links {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 2rem;
-  }
-  .nav-links li a{
-    font-size: .8rem;
-  }
-  .contact_me{
-    display: none;
-  }
-  .social_icon{
-        height: 30px;
-        margin-left: 3vh;
-    }
-    .love{
-        height: 30px;
-    }
-    .header_img{
-        height: 30px;
-    }
-  .footer-links{
-    font-weight: lighter;
-    width: 100%;
-}   
-.footer-links a{
-    font-weight: lighter;
-    font-size: .8rem;
-  } 
-  social, .social-icons{
-    width: 100%;
-    justify-content: center;
-    }
-}
-/* /////////////////Home Page///////////////// */
+
+
+/* /////////////////////Home page//////////////////// */
+
 .main-container{
     display: flex;
     flex-wrap: wrap;
@@ -258,8 +166,8 @@ social, .social-icons{
 .top-section h1{
     color: white;
     width: 50%;
-    font-size: 50px;
-    padding-top: 40vh;
+    font-size: 5em;
+    padding-top: 10rem;
     text-align: center;
     font-family:Oswald, sans-serif;
     -webkit-text-fill-color: transparent;
@@ -279,15 +187,12 @@ social, .social-icons{
                 opacity: 1;
             }
         }
-
-
-
 .top-section p{
     color: white;
-    font-size: 100px;
+    font-size: 5rem;
     text-align: center;
-    /* font-family:Oswald, sans-serif; */
     font-weight: bold;
+    margin: 0;
     
 }
 .mid1-section{
@@ -303,8 +208,7 @@ social, .social-icons{
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.445)), url(./Assets/images/barbell-1839086_1280.jpg);
 }
-.mid1-section h1{
-
+.mid1-section h1 .mid2-section h1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,8 +217,7 @@ social, .social-icons{
     font-size: 1.3rem;
     text-transform: uppercase;
 }
-.mid1-section p{
-
+.mid1-section p, .mid2-section p{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,55 +239,14 @@ social, .social-icons{
     background-image: linear-gradient(rgba(0, 0, 0, 0.548)), url(./Assets/images/man-5886576_1280.jpg);
 }
 
-.mid2-section h1{
+/* /////////////////////About page//////////////////// */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: lighter;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-}
-.mid2-section p{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-@media (max-width: 480px) {
-    .top-section h1{
-        font-size: 25px;
-        width: 90%;
-        padding-top: 30vh;
-    }
-    .top-section p{
-        font-size: 60px;
-        width: 90%;
-    }
-    .mid1-section, .mid2-section{
-        width: 90%;
-        align-items: center;
-    }
-    .top-section{
-    width: 100%;
-    }
-    header{
-        width: 100%;
-    }
-    
-}
-
-/* /////////////////about Page///////////////// */
 .about-section1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30rem;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -393,12 +255,14 @@ social, .social-icons{
 }
 .about-section1-h1{
     color: white;
-    font-size: 100px;
+    font-size: 8rem;
     text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
 }
 .about-section1-p{
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -412,35 +276,43 @@ social, .social-icons{
 .about-section2-p{
     color: rgb(221, 107, 14);
     font-weight: lighter;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .about-section2-h1{
     color: white;
     font-weight: lighter;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .about-innerbox{
     border: 1px solid rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    height: auto;
+    overflow: visible;
+    width: 95%;
     text-align: center;
+    padding: 2rem;
 }
-.about-inerbox-card1, .about-inerbox-card2, .about-inerbox-card3{
+.about-inerbox-card1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid rgb(0, 0, 0);
-    height: 30vh;
+    height: auto;
+    overflow: visible;
     width: 22%;
+    border: 1px solid rgb(56, 56, 56);
+    padding: 3px;
+    margin: 3px;
+    border-radius: 5px;
 }
 .icon-box{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 80px;
+    height: 5rem;
+    width: 5rem;
     background-color: rgb(253, 253, 253);
     border-radius: 50%;   
 }
@@ -448,20 +320,20 @@ social, .social-icons{
     background-color: rgb(221, 107, 14);  
 }
 .about-icon {
-    height: 60px;
-    width: 60px;
+    height: 4rem;
+    width: 4rem;
     object-fit: cover;
     color: white;
 }
 h2{
     color: white;
     font-weight: lighter;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 .icon-disc{
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 1rem;
     color: white;
     font-weight: lighter;
 }
@@ -469,7 +341,10 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow: visible;
     width: 100%;
     background-color: rgb(41, 41, 41);
 }
@@ -490,6 +365,7 @@ h2{
     width: 100%;
     object-fit: cover;
     margin: 0%;
+    border-radius: 5px;
 }
 .about-section3-h1{
     font-weight: lighter;
@@ -513,179 +389,165 @@ h2{
 
 
 
-@media (max-width: 480px) {
+/* Tablet wiew (1180X820) */
+@media (max-width: 1180px) {
+    .contact_me{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+        margin-left: -10vw;
+    }    
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(41, 41, 41);
+        height: 5rem;
+        color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+        .contact_me{
+            display: none;
+    }
+    .footer-links{
+        font-size: 1rem;
+        font-weight: lighter;
+        width: 100%;
+    } 
+    social, .social-icons{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    ul{
+        width: 80%;
+        display: flex; 
+        justify-content: space-around;
+    }
+    /* /////////////////////Home page//////////////////// */
+    .top-section h1{
+        width: 100%;
+    }
+    .about-innerbox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-inerbox-card1{
+        width: 90%;
+    }
+    .about-section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        overflow: visible;
+        width: 100%;
+        background-color: rgb(41, 41, 41);
+    }
+    .about-section3-left{
+        width: 90%;
+    }
+    .about-section3-right{
+        width: 90%;}
+}
+
+
+/* Mobile View */
+@media (max-width: 820px) {
+        .contact_me{
+            display: none;
+    }
+    .checkbtn{
+        display: block;
+        margin-left: -10vw;
+    }
+    .nav-links{
+         position: fixed;
+         flex-direction: column;
+         width: 100%;
+         height: 50vh;
+         background: #2c3e50e0;
+         top: 50px;
+         left: -120%;
+         text-align: center;
+         transition: all .5s;
+    }
+    header ul li{
+        display: block;
+        
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .logo{
+        margin-right: -5vw;
+    }
+    .footer-links{
+        display: none;
+        }
+    .social-icons{
+        width: 100%;
+    }
+    .copyright {
+        font-size: .8rem;
+    }
+    .copyright2 {
+        display: none;
+    }
+    /* /////////////////////Home page//////////////////// */
+    .top-section h1 .mid2-section h1{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .top-section p {
+        font-size: 3rem;
+    }
+    .mid1-section, .mid2-section{
+        width: 90%;
+    }
+/* /////////////////////about page//////////////////// */
     .about-section1-h1{
-        font-size: 55px;
+        color: white;
+        font-size: 100px;
+        text-align: center;
+    }
+    .about-section1{
+        height: 30rem;
+    }
+    .about-section1-h1{
+        font-size: 4rem;
+        margin-top: 10rem;
     }
     .about-section1-p{
-        font-size: 15px;
+        font-size: 1rem;
+    }
+    .about-innerbox{
+        flex-direction: column;
+    }
+    .about-inerbox-card1{
+        width: 90%;
+    }
+    .icon-disc{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .about-innerbox{
+        flex-direction: column;
+        align-items: center;
     }
     .about-section2-h1{
         text-align: center;
     }
-    .about-innerbox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        width: 90%;
-    }
-    .about-inerbox-card1, .about-inerbox-card2, .about-inerbox-card3{
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: auto;
-        margin-bottom: 2.5vh;
-        margin-top: 2.5vh;
-    }
-    .about-section3{
-        flex-direction: column;
-        height: auto;
-        padding-top: 2vh;
-    }
-    .about-section3-left, .about-section3-right{
-        width: 90%;
-        height: auto;
-        margin-bottom: 2vh;
-    }
 }
-@media (max-width: 768px) {
-    .about-innerbox{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    .about-inerbox-card1, .about-inerbox-card2, .about-inerbox-card3 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 40vh;
-    width: 45%
-    }
-    .about-section3-p2 {
-    height: 60vh;
-    font-size: 12px;
-}
-}
-/* /////////////////Courses Page///////////////// */
-
-
-.mid3-section{
-    display: flex;
-    justify-content: center;
-    height: 20vh;
-    width: 100%;
-    padding-top: 10vh;
-}
-.mid3h1{
-    font-size: 8rem;
-    font-weight: lighter;
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgb(246, 247, 248);
-}
-.mid4-section{
-    display: flex;
-    justify-content: space-around;
-    height: 60vh;
-    width: 98%;
-    padding: 2vh;
-    overflow-y: auto;
-}
-.mid4-box1{
-    min-width: 16%;
-    width: 16%;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-radius: 5px;
-}
-.mid4-boxT{
-    height: 65%;
-}
-.mid4-boxT-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.mid4-boxB{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 35%;
-    text-align: center;
-    
-}
-.mid4-boxB{
-    flex-grow: 1;
-}
-.mid4-boxB h1 a{
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-}
-.mid4-boxB p{
-    text-align: center;
-}
-.mid5-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-image: linear-gradient(rgba(243, 1, 1, 0.281), rgba(0, 0, 0, 0.692)), url(./Assets/images/ai-generated-8703047_1280.jpg)
-}
-.mid5-section-innerbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80%;
-    width: 50%;
-}
-.mid5-section-innerbox h4{
-    color: #FF5C00;
-}
-.mid5-h1{
-    color: white;
-    font-weight: lighter;
-    margin-top: 10px;
-    font-size: 40px;
-}
-.mid5-p{
-    color: white;
-    font-weight: lighter;
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-
-@media (max-width: 480px) {
-    .mid3h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    .mid3-section{
-        height: 15vh;
-    }
-    .mid4-section{
-        align-items: center;
-        height: auto;
-        flex-direction: column;
-        width: auto;
-    }
-    .mid4-box1, .mid4-box2, .mid4-box3, .mid4-box4, .mid4-box5{
-        border: 1px solid white;
-        width: 80%;
-        height: 70vh;
-        margin-bottom: 2vh;
-    }
-}
-/* /////////////////Courses Page///////////////// */
