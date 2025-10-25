@@ -386,8 +386,99 @@ h2{
     color: white;
     margin: 2vh;
 }
-
-
+/* //////////Courses //////////*/
+.mid3-section{
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    padding-top: 10vh;
+}
+.mid3h1{
+    font-size: 8rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(246, 247, 248);
+}
+.mid4-section{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 98%;
+    padding: 2vh;
+    overflow: visible;
+}
+.mid4-box1{
+    min-width: 16%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 5px;
+    height: auto;
+    overflow: visible;
+}
+.mid4-boxT{
+    height: 65%;
+}
+.mid4-boxT-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.mid4-boxB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 35%;
+    text-align: center;
+}
+.mid4-boxB h1 a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.mid4-boxB p{
+    text-align: center;
+    height: auto;
+    overflow: visible;
+}
+.mid5-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-image: linear-gradient(rgba(243, 1, 1, 0.281), rgba(0, 0, 0, 0.692)), url(./Assets/images/ai-generated-8703047_1280.jpg)
+}
+.mid5-section-innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+}
+.mid5-section-innerbox h4{
+    color: #465e07;
+}
+.mid5-h1{
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.mid5-p{
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: 15px;
+}
 
 /* Tablet wiew (1180X820) */
 @media (max-width: 1180px) {
@@ -428,7 +519,7 @@ h2{
         display: flex; 
         justify-content: space-around;
     }
-    /* /////////////////////Home page//////////////////// */
+    /* /////////////////////About page//////////////////// */
     .top-section h1{
         width: 100%;
     }
@@ -456,7 +547,31 @@ h2{
         width: 90%;
     }
     .about-section3-right{
-        width: 90%;}
+        width: 90%;
+    }
+/* /////////////////////Courses page//////////////////// */
+
+    .mid3h1{
+        font-size: 6rem;
+        text-align: center;
+    }
+    .mid4-section{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: visible;
+    }
+    .mid4-box1{
+        height: auto;
+        overflow: visible;
+        width: 90%;
+    }
+    .mid4-boxT-img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 }
 
 
@@ -550,4 +665,36 @@ h2{
     .about-section2-h1{
         text-align: center;
     }
+
+/* /////////////////////Courses page//////////////////// */
+    .mid3-section{
+        padding-top: 5vh;
+        height: 10rem;
+    }
+    .mid3h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .mid4-section{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: visible;
+    }
+    .mid4-box1{
+        height: auto;
+        overflow: visible;
+        width: 90%;
+    }
+    .mid4-boxT-img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .mid5-section{
+        height: auto;
+        overflow: visible;
+    }
+
 }
